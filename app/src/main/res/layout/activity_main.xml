@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="?attr/colorPrimary"
+                android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+                app:layout_scrollFlags="scroll|enterAlways|snap"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+            <!--将Toolbal放在了AppBarLayout里面，然后在RecycleView对应的下拉刷新控件中使用了 app:layout_behavior="@string/appbar_scrolling_view_behavior"这个属性，appbar_scrolling_view_behavior这个字符串是由Design库提供的。-->
+            <!--当AppBarLayout接收到滚动事件时，它内部的子控件可以指定如何去影响这些事件，通过app:layout_scrollFlags属性就能实现。-->
+            <!--app:layout_scrollFlags="scroll|enterAlways|snap"-->
+            <!--scroll：表示当RecycleView向上滚动的时候，Toolbar会随着一起向上滚动并实现隐藏-->
+            <!--enterAlways：表示当RecycleView向下滚动的时候，Toolbar会随着一起向下滚动并重新显示-->
+            <!--snap：表示当Toolbar还没有完全隐藏或显示的时候，会根据当前滚动的距离，自动选择隐藏还是显示。-->
+        </android.support.design.widget.AppBarLayout>
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/swipe_refresh"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+        <!--elevation:指定悬浮高度，高度越大，投影效果越谈-->
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_margin="16dp"
+            android:src="@mipmap/ic_done"
+            app:elevation="5dp" />
+
+    </android.support.design.widget.CoordinatorLayout>
+
+    <!--itemBackground :item的背景颜色-->
+    <!--app:itemTextColor=""设置item的背景颜色-->
+    <!--app:itemIconTint item图标颜色-->
+    <android.support.design.widget.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="left"
+        app:headerLayout="@layout/nav_header"
+        app:itemTextColor="@color/text_orange"
+        app:menu="@menu/nav_menu" />
+</android.support.v4.widget.DrawerLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <!-- 文字颜色 -->
+    <color name="text_dark">#222222</color>
+    <color name="text_heavy">#666666</color>
+    <color name="text_light">#999999</color>
+
+    <color name="text_hint">#BBBBBB</color>
+    <color name="text_hint_gray">#999999</color>
+    <color name="text_orange">#FF8600</color>
+    <color name="text_red">#F15353</color>
+    <color name="text_green">#659D0E</color>
+
+
+    <!-- 灰色系 -->
+    <color name="gray_600_n">#3c3d3d</color>
+    <color name="gray_500_n">#6d6d6e</color>
+    <color name="gray_400_n">#9d9e9e</color>
+    <color name="gray_300_n">#dcdcdc</color>
+    <color name="gray_for_guide">#ebebeb</color>
+    <color name="gray_200_n">#ebeced</color>
+    <color name="gray_100_n">#f2f4f5</color>
+    <color name="gray_50_n">#f7f9fa</color>
+</resources>

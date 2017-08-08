@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <!--http://www.open-open.com/lib/view/open1416663769680.html-->
+    <!--B1是不设任何背景的按钮-->
+    <!--B2设置了?android:attr/selectableItemBackground-->
+    <!--B3设置了?android:attr/selectableItemBackgroundBorderless-->
+
+    <Button
+        android:layout_width="100dip"
+        android:layout_height="60dp"
+        android:text="test"/>
+    <Button
+        android:layout_width="100dip"
+        android:layout_height="100dp"
+        android:stateListAnimator="@anim/raise"
+        android:text="test"/>
+    <Button
+        android:id="@+id/test3"
+        android:layout_width="100dip"
+        android:layout_height="100dip"
+        android:background="@color/text_orange"
+        android:transitionName="floatingbtn"
+        android:text="test"/>
+</LinearLayout>
