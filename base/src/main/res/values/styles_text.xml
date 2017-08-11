@@ -1,0 +1,73 @@
+<resources>
+    <!-- 文本样式 -->
+    <style name="text_base">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="text_high_base" parent="text_base">
+        <item name="android:textColorHint">@color/text_hint</item>
+        <item name="android:textSize">@dimen/text_size_big</item>
+    </style>
+
+    <style name="text_middle_base" parent="text_base">
+        <item name="android:textColorHint">@color/text_hint</item>
+        <item name="android:textSize">@dimen/text_size_middle</item>
+    </style>
+
+    <style name="text_small_base" parent="text_base">
+        <item name="android:textColorHint">@color/text_hint</item>
+        <item name="android:textSize">@dimen/text_size_small</item>
+    </style>
+
+    <!-- dark -->
+    <style name="text_dark_high" parent="text_high_base">
+        <item name="android:textColor">@color/text_dark</item>
+    </style>
+
+    <style name="text_dark_middle" parent="text_middle_base">
+        <item name="android:textColor">@color/text_dark</item>
+    </style>
+
+    <style name="text_dark_small" parent="text_small_base">
+        <item name="android:textColor">@color/text_dark</item>
+    </style>
+
+    <!-- heavy -->
+    <style name="text_heavy_high" parent="text_high_base">
+        <item name="android:textColor">@color/text_heavy</item>
+    </style>
+
+    <style name="text_heavy_middle" parent="text_middle_base">
+        <item name="android:textColor">@color/text_heavy</item>
+    </style>
+    <style name="text_heavy_small" parent="text_small_base">
+        <item name="android:textColor">@color/text_heavy</item>
+    </style>
+
+    <!-- light -->
+    <style name="text_light_high" parent="text_high_base">
+        <item name="android:textColor">@color/text_light</item>
+    </style>
+
+    <style name="text_light_middle" parent="text_middle_base">
+        <item name="android:textColor">@color/text_light</item>
+    </style>
+
+    <style name="text_light_small" parent="text_small_base">
+        <item name="android:textColor">@color/text_light</item>
+    </style>
+    <!-- small gray -->
+    <style name="text_gray_small" parent="text_small_base">
+        <item name="android:textColor">@color/text_hint_gray</item>
+    </style>
+
+    <!--white-->
+    <style name="text_white_high" parent="text_high_base">
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="text_white_middle" parent="text_middle_base">
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+</resources>

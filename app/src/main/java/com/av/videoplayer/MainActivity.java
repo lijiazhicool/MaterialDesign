@@ -7,6 +7,7 @@ import java.util.List;
 import com.av.videoplayer.adapter.PictureAdapter;
 import com.av.videoplayer.bean.Picture;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.annotation.NonNull;
@@ -107,6 +108,13 @@ public class MainActivity extends AppCompatActivity {
                 refreshDatas();
             }
         });
+
+        findViewById(R.id.fab).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this,VideoActivity.class));
+            }
+        });
     }
 
     private void refreshDatas() {
@@ -152,6 +160,8 @@ public class MainActivity extends AppCompatActivity {
         mSearchView.setSubmitButtonEnabled(true);
         // 设置输入框提示语
         mSearchView.setQueryHint("hint");
+
+        mSearchView.clearFocus();//清除焦点
 
 
         // 搜索框展开时后面叉叉按钮的点击事件

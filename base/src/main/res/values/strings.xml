@@ -88,4 +88,12 @@
 
 
     </string>
+
+
+
+    <string name="error_empty_msg">数据为空</string>
+
+    <string name="error_retry_msg">请重试</string>
+    <string name="error_network_msg">网络连接超时</string>
+    <string name="loading_title">正在努力加载中，请稍后</string>
 </resources>

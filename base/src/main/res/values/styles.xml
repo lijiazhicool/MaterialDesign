@@ -1,0 +1,57 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="AppTheme.Base"/>
+
+    <style name="AppTheme.Base" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textColorPrimary">@android:color/black</item>
+        <item name="android:textColorPrimaryInverse">@color/text_light</item>
+        <item name="android:statusBarColor" tools:targetApi="lollipop">
+            @color/colorPrimaryDark
+        </item>
+        <item name="android:textColor">@color/text_dark</item>
+        <!--<item name="android:radioButtonStyle">@style/Topeka.CompoundButton.Radio</item>-->
+        <!--<item name="android:buttonStyle">@style/Topeka.CompoundButton</item>-->
+        <!--<item name="android:windowBackground">@color/light_grey</item>-->
+        <!--<item name="android:colorBackground">@color/light_grey</item>-->
+
+
+        <!-- You can also set colorControlNormal.colorControlActivated.colorControlHighlight, colorButtonNormal, colorSwitchThumbNormal, colorEdgeEffect, statusBarColor and navigationBarColor. -->
+
+    </style>
+
+    <style name="BaseToolbarStyle" parent="Theme.AppCompat">
+        <item name="android:layout_height">?attr/actionBarSize</item>
+    </style>
+
+    <!-- 标题栏样式 -->
+    <style name="ToolbarStyle" parent="BaseToolbarStyle">
+        <!-- 标题的颜色 -->
+        <item name="android:textColorPrimary">@android:color/white</item>
+        <!--<item name="android:textColorPrimaryInverse">@color/white</item>-->
+        <!-- 右侧三个点和左侧三条杠的颜色 -->
+        <item name="android:textColorSecondary">@android:color/white</item>
+        <!-- action菜单文字的颜色，只是显示在bar上的而不是popup菜单里的 -->
+        <item name="actionMenuTextColor">@android:color/white</item>
+        <!-- action菜单文字的样式，只是显示在bar上的而不是popup菜单里的 -->
+        <item name="actionMenuTextAppearance">@style/Toolbar.MenuText</item>
+        <!-- 背景色，如果不单独设置popup的背景色，则也是这个颜色 -->
+        <item name="android:background">@color/colorPrimary</item>
+        <!-- 返回按钮icon -->
+        <item name="homeAsUpIndicator">@drawable/ic_title_back</item>
+    </style>
+
+    <!-- 标题栏MENU样式 -->
+    <style name="Toolbar.MenuText" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textSize">@dimen/text_size_middle</item>
+    </style>
+
+    <!-- 标题栏更多操作弹出窗样式 -->
+    <style name="Toolbar.PopupStyle" parent="Widget.AppCompat.PopupMenu.Overflow">
+        <item name="android:textColorPrimary">@color/text_dark</item>
+        <item name="android:background">@android:color/white</item>
+    </style>
+</resources>

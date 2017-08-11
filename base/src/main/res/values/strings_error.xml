@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="TX_ERROR_CODE_SUCCESS">成功</string>
+    <string name="TX_ERROR_CODE_NETWORK_FAIL">网络异常，请检查网络连接</string>
+    <string name="TX_ERROR_CODE_JSON_PARSE">JSON解析失败</string>
+    <string name="TX_ERROR_CODE_API_PARAMS_ERROR">参数错误</string>
+    <string name="TX_ERROR_SERVICE_JSON_EMPTY">服务器返回数据为空</string>
+    <string name="TX_ERROR_UNKNOWN">未知错误</string>
+    <string name="TX_ERROR_CODE_CALL_BACK">回调错误</string>
+    <string name="TX_ERROR_CODE_CANCEL">网络取消</string>
+    <string name="TX_ERROR_CODE_NETWORK_DISCONNECTION">没有网络连接</string>
+    <string name="TX_ERROR_CODE_NETWORK_URL_EMPTY">网络请求URL空</string>
+    <string name="TX_ERROR_CODE_NETWORK_MEDIA_TYPE_EMPTY">网络请求多媒体类型空</string>
+    <string name="TX_ERROR_CODE_NETWORK_CACHE_ERROR">网络缓存错误</string>
+    <string name="TX_ERROR_CODE_NETWORK_GET_RESULT_ERROR">网络请求结果获取失败</string>
+    <string name="TX_ERROR_CODE_RUNTIME_ILLEGAL_ACCESS">runtime&#160;illegal</string>
+    <string name="TX_ERROR_CODE_RUNTIME_INVOCATION">runtime&#160;invocation</string>
+    <string name="TX_ERROR_CODE_RUNTIME_NO_METHOD">runtime&#160;no&#160;method</string>
+
+    <string name="tx_no_call_app_installed">未安装电话应用</string>
+    <string name="tx_no_sms_app_installed">未安装短信应用</string>
+    <string name="tx_no_wechat_installed">未安装微信客户端</string>
+    <string name="tx_no_weibo_installed">未安装微博客户端</string>
+    <string name="tx_no_browser_app_installed">未安装浏览器应用</string>
+</resources>

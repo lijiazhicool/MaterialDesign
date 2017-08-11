@@ -17,7 +17,9 @@
             </intent-filter>
         </activity>
         <activity android:name=".PictureActivity" />
-        <activity android:name=".AnimationTestActivity"></activity>
+        <activity android:name=".AnimationTestActivity" />
+        <activity android:name=".VideoActivity"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar"></activity>
     </application>
 
 </manifest>
